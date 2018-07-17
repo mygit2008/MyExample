@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sousuo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.myexample.activity.SousuoActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:background="@mipmap/jianbian">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/back1" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/sousuo"
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:layout_below="@+id/address"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45px"
+            android:layout_marginRight="45px"
+            android:layout_toRightOf="@+id/back"
+            android:background="@drawable/shape_sou"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/sous"
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:layout_marginLeft="10px"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/sous" />
+
+            <EditText
+                android:id="@+id/sou_suo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="搜索店铺，菜品名称"
+                android:textSize="32px"
+                android:layout_toRightOf="@+id/sous"
+                />
+
+            <TextView
+                android:id="@+id/tt"
+                android:layout_width="2px"
+                android:layout_height="50px"
+                android:background="#c8c8c8"
+                android:layout_marginRight="15px"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/sou_btn" />
+
+            <TextView
+                android:id="@+id/sou_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25px"
+                android:layout_alignParentRight="true"
+                android:textSize="36px"
+                android:text="搜索" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

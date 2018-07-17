@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:paddingTop="20px"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/class_img"
+        android:layout_width="250px"
+        android:layout_height="250px"
+        fresco:roundedCornerRadius="10px"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/class_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/class_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10px"/>
+
+    <TextView
+        android:id="@+id/class_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/class_img"
+        android:layout_below="@+id/class_title"
+        android:textColor="#f00"
+        android:layout_marginTop="20px" />
+
+    <ImageView
+        android:id="@+id/tianjia"
+        android:layout_width="100px"
+        android:layout_height="60px"
+        android:layout_marginTop="10px"
+        android:layout_alignRight="@+id/class_img"
+        android:layout_below="@+id/class_title"
+        android:src="@mipmap/tianjia" />
+</com.zhy.autolayout.AutoRelativeLayout>

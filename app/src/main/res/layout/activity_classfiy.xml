@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_classfiy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    tools:context="example.com.myexample.activity.ClassfiyActivity">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:background="@mipmap/jianbian">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35px"
+            android:layout_height="35px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="45px"
+            android:src="@mipmap/back1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="知青居"
+            android:textColor="#ffffff"
+            android:textSize="40px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lll"
+        android:background="#ffffff"
+        app:tabIndicatorColor="#ffd200"
+        app:tabIndicatorHeight="5px"
+        app:tabSelectedTextColor="#ffd200"
+        app:tabTextColor="#999999" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab"
+        android:layout_marginTop="10px" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="example.com.myexample.login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="350px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/logo" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/log">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/user_icn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_margin="30px"
+                android:src="@mipmap/user_icon" />
+
+            <EditText
+                android:id="@+id/tel_num"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_alignBottom="@+id/user_icn"
+                android:layout_marginRight="50px"
+                android:layout_toRightOf="@+id/user_icn"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/tel_num"
+                android:layout_margin="30px"
+                android:background="#ccc" />
+
+            <ImageView
+                android:id="@+id/pwd_icn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_below="@+id/user_icn"
+                android:layout_margin="30px"
+                android:src="@mipmap/yannum" />
+
+            <EditText
+                android:id="@+id/yan_num"
+                android:layout_width="300px"
+                android:layout_height="70px"
+                android:layout_alignBottom="@+id/pwd_icn"
+                android:layout_toRightOf="@+id/pwd_icn"
+                android:background="@null"
+                android:hint="输入短信验证码"
+                android:inputType="numberPassword" />
+
+
+            <TextView
+                android:id="@+id/textVieww"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/yan_num"
+                android:layout_margin="30px"
+                android:background="#ccc" />
+
+            <TextView
+                android:id="@+id/yan_icn"
+                android:layout_width="200px"
+                android:layout_height="80px"
+                android:layout_alignEnd="@+id/tel_num"
+                android:layout_alignRight="@+id/tel_num"
+                android:layout_below="@+id/textView"
+                android:background="@mipmap/yanzheng"
+                android:gravity="center_vertical"
+                android:paddingLeft="15px"
+                android:textColor="#ffffff"
+                android:textSize="32px" />
+
+            <Button
+                android:id="@+id/ybutton"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textVieww"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:background="@mipmap/login" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/clogin_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/log"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/cuser_icn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_margin="30px"
+                android:src="@mipmap/user_icon" />
+
+            <EditText
+                android:id="@+id/ctel_num"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_alignBottom="@+id/cuser_icn"
+                android:layout_marginRight="50px"
+                android:layout_toRightOf="@+id/cuser_icn"
+                android:background="@null"
+                android:hint="请输入手机号码"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/ctextView"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/ctel_num"
+                android:layout_margin="30px"
+                android:background="#ccc" />
+
+            <ImageView
+                android:id="@+id/picn"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:layout_below="@+id/cuser_icn"
+                android:layout_margin="30px"
+                android:src="@mipmap/pass_icon" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="70px"
+                android:layout_alignBottom="@+id/picn"
+                android:layout_marginRight="50px"
+                android:layout_toRightOf="@+id/picn"
+                android:background="@null"
+                android:hint="输入登录密码"
+                android:inputType="numberPassword" />
+
+            <ImageView
+                android:id="@+id/show_hide"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignBottom="@+id/pwd"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10px"
+                android:layout_marginRight="45px"
+                android:background="@mipmap/hid_pwd" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="2px"
+                android:layout_below="@+id/pwd"
+                android:layout_margin="30px"
+                android:background="#ccc" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:background="@mipmap/login" />
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <TextView
+        android:id="@+id/log_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rr"
+        android:layout_centerHorizontal="true"
+        android:text="常规登录方式"
+        android:textColor="#FFD200" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="其他登录方式" />
+
+        <ImageView
+            android:id="@+id/wx_btn"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="15px"
+            android:layout_toLeftOf="@+id/textView3"
+            android:src="@mipmap/wx_btn" />
+
+        <ImageView
+            android:id="@+id/qq_btn"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="15px"
+            android:layout_toRightOf="@+id/textView3"
+            android:src="@mipmap/qq_btn" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/autoRelativeLayout2"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/brlv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/crlv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/autoRelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/heji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="200px"
+            android:text="合计"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10px"
+            android:layout_toRightOf="@+id/heji"
+            android:text="￥0.00"
+            android:textColor="#f00"
+            android:textSize="40px" />
+
+        <Button
+            android:id="@+id/gwc_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/jianbian"
+            android:text="点好了"
+            android:textColor="#ffffff" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ImageView
+        android:id="@+id/sao"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:background="@mipmap/gwc2" />
+
+    <ImageView
+        android:id="@+id/saoq"
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30px"
+        android:layout_marginLeft="30px"
+        android:background="@mipmap/gwcqp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/gwcn"
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22px"
+        android:layout_marginLeft="15px"
+        android:gravity="right"
+        android:text="1"
+        android:textColor="#ffffff"
+        android:visibility="gone" />
+</com.zhy.autolayout.AutoRelativeLayout>
